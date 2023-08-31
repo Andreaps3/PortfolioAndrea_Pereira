@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+
+    --cor-primaria:#002B5B;
+    --cor-secundaria: #159895;
+    --cor-terciaria: #1A5F7A;
+    --cor-quaternaria: #57C5B6;
+
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+    display: grid;
+      
+    background-color: var(--cor-primaria);
+    color: var(--cor-quaternaria);
+    font-family: var(--fonte-secundaria);
+}
+
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
+label, input, textarea, button{
+    display: block;
+}
+
+input, textarea,button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 500;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    color: bisque;
+    background: var(--cor-terciaria) ;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+    outline: none;
+    border-color: var(--cor-quaternaria);
+    box-shadow: 0 0 0 0.3125rem #1A5F7A;
+}
+
+label{
+    margin-bottom: 0.5rem;
+    color: var(--cor-secundaria);
+}
+
+textarea{
+    min-height: 12.5rem;
+    resize: vertical;
+}
+
+button{
+    border: none;
+    border-radius: 80px;
+    color: var(--cor-primaria);
+    background: var(--cor-quaternaria);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+button:focus{
+    outline: none;
+    background: var(--cor-quaternaria);
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background: gray;
+
+}
+
+.apresentacao__imagem{
+    /*width: 50%;*/
+    width: 486px;
+    height: 550px;
+    top: 200px;
+    left: 1080px;
+    border-radius: 32px;
+
+    border: 8px solid #40F8FF;
+}
+
+.rodape_img {
+    display: flex; 
+    width: 200px;
+    height: 100px;
+    top: 900px;
+    left: 530px;
+    flex-direction: row;   
+    justify-content: space-between; 
+    gap: 5rem;
+
+}
+
+
+.rodape {
+    padding: 16px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center ;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;    
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.success {
+    color: #33ff7c;
+}
+
+.error {
+    color: #ff333f;
+}

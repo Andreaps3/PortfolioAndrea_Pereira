@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="./style/style.css">   
+    <link rel="stylesheet" href="./style/stylecontato.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="habilidades.html">Habilidades</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <Main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao_conteudo_titulo">Contato</h1>
+
+            <form action="https://formsubmit.co/andrea.ps03@gmail.com" method="POST" data-form>
+               
+          
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Informe seu nome">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email" id="e-mail" required placeholder="Digite seu e-mail aqui Exe: contato@email.com">        
+        
+                <label for="mensagem"> Mensagem</label>
+                <textarea name="message" id="mensagem" required placeholder="Deixe sua mensagem"></textarea>
+         
+
+                <input type="hidden" name="_next" value="https://projeto-final-ten.vercel.app/email-enviado.html">
+                <button type="submit" data-button>Enviar</button>
+
+            
+            </form>
+        </section>
+        <img class="apresentacao__imagem" src="./assets/andreaSantos.jpg" alt="Foto da Andrea Santos">
+    </Main>
+    <footer class="rodape">
+        <div class="rodape_img"> 
+         <img  src="./assets/LogoAlura.png" alt="Foto da Andrea Santos">
+         <img  src="./assets/Logo_Senac.png" alt="Foto da Andrea Santos">
+       </div>
+         <p>Desenvolvido por Andrea Santos no programa Alura Include.</p>
+     </footer>
+</body>
+
+</html>
